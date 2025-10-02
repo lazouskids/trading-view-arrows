@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "TVA | Trading View Arrows",
+  "version": "1.0",
+  "description": "The extension allows switching timeframes using arrows",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
